@@ -1,0 +1,7 @@
+function onFormSubmit(e) {
+  var formValues = e.namedValues;
+  var cityIndex = 4;
+  if (formValues['Seller'] == '') {
+    SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Form Responses 1').getRange(SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Form Responses 1').getLastRow(), cityIndex).setValue("Abir");
+  }
+}
